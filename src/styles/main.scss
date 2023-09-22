@@ -1,5 +1,35 @@
-$bGcolor: rgb(122, 92, 92);
+@use 'header';
+@use 'variaveis';
+@use 'section';
+@use 'carousel';
 
-body {
-    background-color: $bGcolor;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;;
+    box-sizing: border-box;
+    text-decoration: none;
 }
+
+.background {
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2023/04/FQEVLXR01X2E1634600097644.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
+}
+
+
+
+
+

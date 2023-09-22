@@ -1,0 +1,61 @@
+@use 'variaveis';
+
+.header {
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+
+
+    width: 100%;
+    max-width: 1500px;
+    padding-top: 24px;
+
+    img {
+        width: 70px;
+        height: auto;
+    }
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.header__navigation__item a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-family: variaveis.$textSecondary;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: .5s;
+
+    &:hover {
+        color: variaveis.$cordoHover;
+    }
+}
+
+.navigation__social {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    column-gap: 24px;
+}
+
+.navigation__social svg {
+    color: variaveis.$corIcones;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: all 0.4s;
+
+    &:hover {
+        opacity: 1;
+        transform: translateY(-5px);
+        color: variaveis.$cordoHover;
+        cursor: pointer;
+    }
+}
+

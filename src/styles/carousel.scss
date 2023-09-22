@@ -1,0 +1,36 @@
+@use 'variaveis';
+
+.section-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 100px;
+}
+
+
+.carrossel {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    max-width: 1500px;
+    height: 600px;
+    width: 900px;
+}
+
+.section-img h1 {
+    margin: 0 auto;
+    color: variaveis.$corIcones;
+    font-family: variaveis.$textSecondary;
+}
+
+.carrossel__img {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+img {
+    object-fit: cover;
+    height: 600px;
+    width: 900px;
+}
