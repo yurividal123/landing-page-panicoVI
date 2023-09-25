@@ -1,16 +1,36 @@
-const imgs = document.getElementById("img");
-const img =document.querySelectorAll("#img img");
+const slider = document.querySelectorAll('.slider');
+const btnPrev = document.getElementById('prev-button');
+const btnNext = document.getElementById('next-button');
 
-let idx = 0;
+let currentSlide = 0;
 
-function carrossel() {
-    idx++;
-
-    if(idx > img.length - 1){
-        idx = 0;
-    }
-
-    imgs.style.transform = `translateX(${-idx * 900}px)`;
+function hideSlider() {
+    slider.forEach(item => item.classList.remove('on'))
 }
 
-setInterval(carrossel, 5000);
+function showSlider() {
+    slider[currentSlide].classList.add('on')
+}
+
+function nextSlider() {
+    hideSlider()
+    if(currentSlide == slider.length -1) {
+        currentSlide = 0
+    } else {
+        currentSlide++
+    }
+    showSlider()
+}
+
+function prevSlider() {
+    hideSlider()
+    if(currentSlide == 0) {
+        currentSlide = slider.length -1
+    } else {
+        currentSlide--
+    }
+    showSlider()
+}
+
+btnNext.addEventListener('click', nextSlider)
+btnPrev.addEventListener('click', prevSlider)

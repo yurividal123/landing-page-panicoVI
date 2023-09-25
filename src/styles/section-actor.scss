@@ -1,0 +1,44 @@
+@use 'variaveis';
+
+.config-page {
+    padding-top: 100px;
+}
+
+.section-actor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.section-actor-img {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 120px;
+
+}
+
+.img-actor-text {
+    text-align: center;
+    padding: 24px;
+}
+
+.img-actor {
+    width: 200px;
+    height: 200px;
+}
+
+.actor-h2 {
+    font-size: 24px;
+    color: variaveis.$corIcones;
+    font-family: variaveis.$textTrailer;
+}
+
+.actor-p {
+    color: variaveis.$corIcones;
+    font-family: variaveis.$textPrincipal;
+}

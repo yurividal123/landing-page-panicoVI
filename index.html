@@ -17,16 +17,16 @@
     
                 <ul class="header__navigation">
                         <li class="header__navigation__item">
-                            <a href="#"><b>HOME</b></a>
-                        </li>
-                        <li class="header__navigation__item">
-                            <a href="#"><b>STORY</b></a>
-                        </li>
-                        <li class="header__navigation__item">
-                            <a href="#"><b>WALLAPPERS</b></a>
+                            <a href="#"><b>INÍCIO</b></a>
                         </li>
                         <li class="header__navigation__item">
                             <a href="#"><b>TRAILER</b></a>
+                        </li>
+                        <li class="header__navigation__item">
+                            <a href="#"><b>GALERIA</b></a>
+                        </li>
+                        <li class="header__navigation__item">
+                            <a href="#"><b>HISTÒRIA</b></a>
                         </li>
                 </ul>
     
@@ -46,26 +46,70 @@
                 </div>
             </header>
             <div class="content">
-                <section class="trailer-filme">
-                    <video src="./src/video/videoplayback_Trim.mp4" controls></video>
-                    <span class="titulo-video"><B>TRAILER</B></span>
-                    <p class="text">
-                        <b>O filme traz os sobreviventes do último filme tentando <br> recomeçar a vida longe de Woodsboro, em Nova York. <br>  Contudo, as coisas não saem como planejado e o assassino Ghostface <br> volta à procura de sangue. <br> O próximo filme da franquia de terror estreia no dia <br> 9 de março de 2023 nos cinemas do Brasil.</b>
-                    </p>
+                <section>
+                    <div class="content-primary">
+                        <video src="./src/video/videoplayback_Trim.mp4" controls></video>
+                        <div>
+                            <h1 class="titulo-video"><B>TRAILER</B></h1>
+                            <p class="text">
+                                <b>O filme traz os sobreviventes do último filme tentando <br> recomeçar a vida longe de Woodsboro, em Nova York. <br>  Contudo, as coisas não saem como planejado e o assassino Ghostface <br> volta à procura de sangue. <br> O próximo filme da franquia de terror estreia no dia <br> 9 de março de 2023 nos cinemas do Brasil.</b>
+                            </p>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
-        <div class="section-img">
-            <h1>PÂNICO VI</h1>
-            <section class="carrossel">
-                <div class="carrossel__img" id="img">
-                    <img src="./src/imagens/panico 1.webp" alt="">
-                    <img src="./src/imagens/panico2.jpg" alt="">
-                    <img src="./src/imagens/panico-3.jpg" alt="">
-                    <img src="./src/imagens/panico4.avif" alt="">
+        <section class="section-img">
+            <button id="prev-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+            </svg>></button>
+                <div class="carrossel__img">
+                    <img src="./src/imagens/panico 1.webp" alt="" class="slider on">
+                    <img src="./src/imagens/panico2.jpg" alt="" class="slider">
+                    <img src="./src/imagens/panico-3.jpg" alt="" class="slider">
+                    <img src="./src/imagens/panico4.avif" alt="" class="slider">
+                </div>
+            <button id="next-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+            </svg>></button>
+        </section>
+        <div class="config-page">
+            <h1 class="text-h1">ELENCO</h1>
+            <section class="section-actor">
+                <div class="section-actor-img">
+                    <div class="img-actor-text">
+                        <img class="img-actor" src="./src/imagens/jenna-ortega-1677582680.jpg" alt="">
+                        <h2 class="actor-h2">Jenna Ortega</h2>
+                        <p class="actor-p">Tara Carpenter</p>
+                    </div>
+                    <div class="img-actor-text">
+                        <img class="img-actor" src="./src/imagens/melissa.jpg" alt="">
+                        <h2 class="actor-h2">Melissa Barrera</h2>
+                        <p class="actor-p">Sam Carpenter</p>
+                    </div>
+                    <div class="img-actor-text">
+                        <img class="img-actor" src="./src/imagens/courteney cox.webp" alt="">
+                        <h2 class="actor-h2">Couterney Cox</h2>
+                        <p class="actor-p">Gale Weathers</p>
+                    </div>
+                    <div class="img-actor-text">
+                        <img class="img-actor" src="./src/imagens/Jack-Champion.webp" alt="">
+                        <h2 class="actor-h2">Jack Champion</h2>
+                        <p class="actor-p">Ethan Landry</p>
+                    </div>
+                    <div class="img-actor-text">
+                        <img class="img-actor" src="./src/imagens/samara.jpg" alt="">
+                        <h2 class="actor-h2">Sarama Weaving</h2>
+                        <p class="actor-p">Laura Crane</p>
+                    </div>
+                    <div class="img-actor-text">
+                        <img class="img-actor" src="./src/imagens/skeet ulrich.webp" alt="">
+                        <h2 class="actor-h2">Sheet Ulrich</h2>
+                        <p class="actor-p">'Stab' Billy</p>
+                    </div>
                 </div>
             </section>
         </div>
-        <script src="./main.js"></script>
+        <script src="./main.js" defer></script>
 </body>
 </html>
