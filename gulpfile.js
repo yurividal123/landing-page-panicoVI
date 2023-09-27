@@ -8,14 +8,14 @@ function scripts() {
     .pipe(gulp.dest('./dist/js'))
 }
 
+
 function styles() {
-    return gulp.src('./src/styles/*scss')
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(gulp.dest('./dist/css'));
+    return gulp.src('./src/styles/*.scss')
+    .pipe(sass({outputStyles: 'compressed' }))
+    .pipe(gulp.dest('./dist/css'));
 }
 
-exports.default = gulp.parallel(scripts);
-exports.default = (styles, scripts);
+exports.default = gulp.parallel(styles, scripts);
 
 exports.watch = function() {
     gulp.watch('./src/styles/*scss', gulp.parallel(styles))
